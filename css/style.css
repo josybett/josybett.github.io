@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@0;1&family=Poppins:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/** header **/
+header .navbar {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(204, 155, 250);
+    word-spacing: 30px;
+}
+
+.iconNav {
+    width: 30px;
+    height: 24px;
+}
+/** fin header **/
+
+/** global **/
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: bisque;
+}
+
+h1, h2 {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 500;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p, a, li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: 300;
+}
+
+p {
+    margin-bottom: 20px;
+    padding-left: 60px;
+    margin-right: 60px;
+}
+/** fin global **/
+
+/** footer **/
+footer{
+    margin-top: 20px;
+    padding:30px;
+    background-color: rgb(204, 155, 250);
+}
+
+.footerSuscribir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerSuscribir .mb-3 {
+    width: 73%;
+}
+
+.footerSuscribir .btn {
+    height: 57px;
+}
+
+.boxSocial {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-column-gap: 30px;
+}
+
+.boxSocial a {
+    text-align: center;
+}
+
+.img-icon {
+    margin-top: 50px;
+    margin-left: 130px;
+    width: 100px;
+}
+
+.icono {
+    width: 48px;
+    background-color:  white;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-color: rgb(156, 22, 234);
+}
+
+.footerCopy {
+    margin: 20px;
+    text-align: center;
+}
+/** fin footer **/
+
+.video {
+    margin: 50px 60px 50px 100px;
+}
+
+.lista {
+    list-style-type: circle;
+    margin: 20px 50px 30px 50px;
+    padding-left: 60px;
+}
+
+.img-salud {
+    margin: 20px 60px 20px 100px;
+    width: 100px;
+    border: 10px double green;
+}
+
+.iframeVideo {
+    width: 560px;
+    height: 315px;
+}
+
+/** index **/
+.imgIndex {
+    width: 80%;
+    margin: 30px;
+}
+/** fin index **/
+
+/** page dieta **/
+.imgAcordion {
+    margin: 20px;
+    max-width: 300px;
+    min-width: 100px;
+    border: 10px double green;
+}
+/** fin page dieta **/
+
+/** responsive **/
+@media(min-width:500px) {
+    /** header **/
+    header .navbar {
+        background-color: rgb(225, 220, 230);
+    }
+    /** fin header **/
+
+    /** global **/
+    p {
+        font-size: 17px;
+    }
+    /** fin global **/
+
+}
+/** fin responsive **/
