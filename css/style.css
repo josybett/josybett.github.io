@@ -5,20 +5,6 @@
     margin: 0;
 }
 
-/** header **/
-header .navbar {
-    text-align: center;
-    padding: 50px;
-    background-color: rgb(204, 155, 250);
-    word-spacing: 30px;
-}
-
-.iconNav {
-    width: 30px;
-    height: 24px;
-}
-/** fin header **/
-
 /** global **/
 a {
     text-decoration: none;
@@ -38,7 +24,7 @@ h1, h2 {
 
 p, a, li {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     line-height: 30px;
     text-align: justify;
@@ -51,7 +37,33 @@ p {
     padding-left: 60px;
     margin-right: 60px;
 }
+
+.divImgCenter {
+    text-align: center;
+}
 /** fin global **/
+
+/** header **/
+header .navbar {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(204, 155, 250);
+    word-spacing: 30px;
+}
+
+.iconNav {
+    width: 30px;
+    height: 24px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-item {
+    text-align: right;
+}
+/** fin header **/
 
 /** footer **/
 footer{
@@ -114,12 +126,6 @@ footer{
     padding-left: 60px;
 }
 
-.img-salud {
-    margin: 20px 60px 20px 100px;
-    width: 100px;
-    border: 10px double green;
-}
-
 .iframeVideo {
     width: 560px;
     height: 315px;
@@ -130,30 +136,106 @@ footer{
     width: 80%;
     margin: 30px;
 }
+
+.imgFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /** fin index **/
 
 /** page dieta **/
 .imgAcordion {
-    margin: 20px;
+    margin: 4px;
     max-width: 300px;
     min-width: 100px;
     border: 10px double green;
 }
+.accordion .accordion-item {
+    background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #5f0ce4;
+    background-color: #f0e7ff;
+}
+
+.accordion-item .accordion-button {
+    background-color: transparent;
+    height: 24px;
+}
+
+.accordion-item .accordion-header .accordion-button:focus,
+.accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #cacef7;
+}
+
+.parrafoAcordion {
+    padding-left: 20px;
+    margin-right: 20px;
+}
 /** fin page dieta **/
+
+/** page saludable **/
+.imgSalud {
+    margin: 20px; /* 60px 20px 100px;*/
+    width: 70%;
+    border: 10px double green;
+}
+
+.imgVida {
+    width: 80%;
+}
+/** fin page saludable **/
 
 /** responsive **/
 @media(min-width:500px) {
-    /** header **/
-    header .navbar {
-        background-color: rgb(225, 220, 230);
-    }
-    /** fin header **/
-
     /** global **/
     p {
-        font-size: 17px;
+        font-size: 20px;
     }
     /** fin global **/
+
+    /** index **/
+    .imgFlex {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .img-icon {
+        margin-left: 0px;
+    }
+    /** fin index **/
+
+    /** page dieta **/
+    .imgAcordion {
+        margin: 20px;
+    }
+    /** fin page dieta **/
+
+}
+
+@media(min-width:768px) {
+    /** index **/
+    .imgAcordion {
+        width: 100%;
+    }
+    /** fin index **/
+
+}
+
+@media(min-width:1024px) {
+    /** index **/
+    .imgIndex {
+        width: 75%;
+        margin: 80px 60px 60px 60px;
+    }
+    /** fin index **/
 
 }
 /** fin responsive **/
