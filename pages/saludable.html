@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="Vida saludable, equilibrio en nuestra alimentación suma valor para mantener nuestro cuerpo y mente">
     <meta name="keywords" content="equilibrio, cotidiano, vida, salud, saludable, descanso, comida, ayuda">
@@ -56,9 +57,9 @@
     
     <section>
         <div class="divImgCenterGrid">
-            <img class="imgSalud" src="../images/fruta.jpeg" alt="dos platos en forma de corazon con frutas">
-            <img class="imgSalud" src="../images/plato.jpeg" alt="plato con vegetales, proteina de pollo y garbanzos, cubiertos">
-            <img class="imgSalud" src="../images/vegetales.webp" alt="fotografia de espárragos, aguacate, tomate rojo y verde, ajo">
+            <img data-aos="flip-left" class="imgSalud" src="../images/fruta.jpeg" alt="dos platos en forma de corazon con frutas">
+            <img data-aos="flip-left" class="imgSalud" src="../images/plato.jpeg" alt="plato con vegetales, proteina de pollo y garbanzos, cubiertos">
+            <img data-aos="flip-left" class="imgSalud" src="../images/vegetales.webp" alt="fotografia de espárragos, aguacate, tomate rojo y verde, ajo">
         </div>
     </section>
 
@@ -86,6 +87,11 @@
 
     <!-- bundle BTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
