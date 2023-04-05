@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@0;1&family=Poppins:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/** global **/
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: bisque;
+}
+
+h1, h2, .accordion-button {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 500;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: left;
+    padding-left: 65px;
+}
+
+p, a, li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: black;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+p {
+    margin-bottom: 20px;
+    padding-left: 60px;
+    margin-right: 60px;
+}
+
+.divImgCenter, .divImgCenterGrid{
+    text-align: center;
+}
+/** fin global **/
+
+/** header **/
+header .navbar {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(204, 155, 250);
+    word-spacing: 30px;
+}
+
+.iconNav {
+    width: 30px;
+    height: 24px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-item {
+    text-align: right;
+}
+/** fin header **/
+
+/** footer **/
+footer{
+    margin-top: 20px;
+    padding:30px;
+    background-color: rgb(204, 155, 250);
+}
+
+.footerSuscribir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerSuscribir .mb-3 {
+    width: 73%;
+}
+
+.footerSuscribir .btn {
+    height: 57px;
+}
+
+.boxSocial {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-column-gap: 30px;
+}
+
+.boxSocial a {
+    text-align: center;
+}
+
+.icono {
+    width: 48px;
+    background-color:  white;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-color: rgb(156, 22, 234);
+}
+
+.footerCopy {
+    margin-top: 20px;
+    text-align: center;
+}
+/** fin footer **/
+
+.video {
+    margin: 50px 60px 50px 60px;
+}
+
+.lista {
+    list-style-type: circle;
+    margin: 20px 50px 30px 50px;
+    padding-left: 60px;
+}
+
+.iframeVideo {
+    width: 100%;
+    height: 315px;
+}
+
+/** index **/
+.imgIndex {
+    width: 80%;
+    margin: 30px;
+}
+
+.imgFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.img-icon {
+    margin-top: 50px;
+    width: 30%;
+}
+/** fin index **/
+
+/** page dieta **/
+.accordion-button {
+    font-size: 1.5rem;
+}
+
+.imgAcordion {
+    margin: 4px;
+    max-width: 300px;
+    min-width: 100px;
+    border: 10px double green;
+}
+.accordion .accordion-item {
+    background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #5f0ce4;
+    background-color: #f0e7ff;
+}
+
+.accordion-item .accordion-button {
+    background-color: transparent;
+    height: 24px;
+}
+
+.accordion-item .accordion-header .accordion-button:focus,
+.accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #cacef7;
+}
+
+.parrafoAcordion {
+    padding-left: 20px;
+    margin-right: 20px;
+}
+/** fin page dieta **/
+
+/** page saludable **/
+.imgSalud {
+    margin: 20px;
+    width: 70%;
+    border: 10px double green;
+}
+
+.imgVida {
+    width: 80%;
+}
+/** fin page saludable **/
+
+/* postre */
+.flexPostre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* tips */
+.imgTip {
+    width: 100%;
+    margin: auto;
+}
+
+.tipsFlexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/** responsive **/
+@media(min-width:500px) {
+    /** global **/
+    p {
+        font-size: 20px;
+    }
+    /** fin global **/
+
+    /** index **/
+    .imgFlex {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .img-icon {
+        width: 40%;
+    }
+    /** fin index **/
+
+    /** page dieta **/
+    .imgAcordion {
+        margin: 20px;
+    }
+
+    .accordion-button {
+        font-size: 2rem;
+    }
+    /** fin page dieta **/
+
+    h3 {
+        padding-left: 60px;
+    }
+
+}
+
+@media(min-width:768px) {
+    /** index **/
+    .imgAcordion {
+        width: 100%;
+    }
+    /** fin index **/
+
+    .imgSalud {
+        width: 95%;
+        height: 388px;
+    }
+
+    .divImgCenterGrid {
+        display: grid;
+        grid-template-columns: 46% 48%;
+        grid-template-rows: auto;
+        margin-left: 40px;
+    }
+
+    .imgTip {
+        margin-bottom: 20px;
+        padding-left: 60px;
+        margin-right: 60px;
+        width: auto;
+    }
+
+    .divImgTip {
+        text-align: center;
+    }
+}
+
+@media(min-width:1024px) {
+    /** index **/
+    .imgIndex {
+        width: 75%;
+        margin: 80px 60px 60px 60px;
+    }
+    /** fin index **/
+
+}
+/** fin responsive **/

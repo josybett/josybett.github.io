@@ -1,0 +1,42 @@
+footer{
+    margin-top: 20px;
+    padding:30px;
+    background-color: $colorFooter;
+}
+
+.footerSuscribir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerSuscribir .mb-3 {
+    width: 73%;
+}
+
+.footerSuscribir .btn {
+    height: 57px;
+}
+
+.boxSocial {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-column-gap: 30px;
+}
+
+.boxSocial a {
+    text-align: center;
+}
+
+.icono {
+    width: 48px;
+    background-color:  white;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-color: $colorIconFooter;
+}
+
+.footerCopy {
+    margin-top: 20px;
+    text-align: center;
+}
