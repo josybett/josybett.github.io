@@ -3,3 +3,9 @@
     flex-direction: $direction;
     justify-content: $justify;
 }
+
+@mixin cajaGrid($col, $gap) {
+    display: grid;
+    grid-template-columns: repeat($col, minmax(0,1fr));
+    grid-column-gap: $gap;
+}

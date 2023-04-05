@@ -55,11 +55,19 @@
         margin-bottom: 20px;
         padding-left: 60px;
         margin-right: 60px;
-        width: auto;
+        width: 80%;
     }
 
     .divImgTip {
         text-align: center;
+    }
+
+    .tipCaja {
+        @include cajaGrid(2, 30px);
+    }
+
+    .divImgTip {
+        width: 80%;
     }
 }
 

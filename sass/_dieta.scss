@@ -6,7 +6,7 @@
     margin: 4px;
     max-width: 300px;
     min-width: 100px;
-    border: 10px double green;
+    border: $boderImg;
 }
 .accordion {
     .accordion-item {
@@ -16,8 +16,8 @@
 
 .accordion-button {
     &:not(.collapsed) {
-        color: #5f0ce4;
-        background-color: #f0e7ff;
+        color: $colorAcordion;
+        background-color: $backgroundColorAcordion;
     }
 }
 
@@ -36,7 +36,7 @@
                 box-shadow: none;
             }
             &:focus {
-                border-color: #cacef7;
+                border-color: $borderColorAcordion;
             }
         }
     }
