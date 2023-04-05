@@ -14,7 +14,7 @@ body {
     background-color: bisque;
 }
 
-h1, h2 {
+h1, h2, .accordion-button {
     font-family: 'Gentium Book Basic', serif;
     font-weight: 500;
     padding: 30px;
@@ -27,8 +27,7 @@ p, a, li {
     font-size: 17px;
     color: black;
     line-height: 30px;
-    text-align: justify;
-    text-indent: 30px;
+    /*text-indent: 30px;*/
     font-weight: 300;
 }
 
@@ -145,6 +144,10 @@ footer{
 /** fin index **/
 
 /** page dieta **/
+.accordion-button {
+    font-size: 1.5rem;
+}
+
 .imgAcordion {
     margin: 4px;
     max-width: 300px;
@@ -215,6 +218,10 @@ footer{
     /** page dieta **/
     .imgAcordion {
         margin: 20px;
+    }
+
+    .accordion-button {
+        font-size: 2rem;
     }
     /** fin page dieta **/
 
