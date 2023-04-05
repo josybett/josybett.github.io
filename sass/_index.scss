@@ -4,9 +4,7 @@
 }
 
 .imgFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include cajaFlex(column, space-between);
     text-align: center;
 }
 

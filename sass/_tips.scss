@@ -4,8 +4,6 @@
 }
 
 .tipsFlexbox {
-    display: flex;
-    flex-direction: row;
+    @include cajaFlex(row, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 }

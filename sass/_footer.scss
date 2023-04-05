@@ -5,27 +5,22 @@ footer{
 }
 
 .footerSuscribir {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footerSuscribir .mb-3 {
-    width: 73%;
-}
-
-.footerSuscribir .btn {
-    height: 57px;
+    @include cajaFlex(row, space-between);
+    .mb-3 {
+        width: 73%;
+    }
+    .btn {
+        height: 57px;
+    }
 }
 
 .boxSocial {
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     grid-column-gap: 30px;
-}
-
-.boxSocial a {
-    text-align: center;
+    a {
+        text-align: center;
+    }
 }
 
 .icono {
