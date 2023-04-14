@@ -254,6 +254,9 @@ footer {
   .divImgTip {
     width: 80%;
   }
+  .imgFin {
+    grid-column: 1/3;
+  }
 }
 @media (min-width: 1024px) {
   /** index **/
