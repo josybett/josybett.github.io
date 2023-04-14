@@ -109,7 +109,7 @@ footer {
 
 .lista {
   list-style-type: circle;
-  margin: 20px 50px 30px 50px;
+  margin: 20px 30px 30px 30px;
   padding-left: 60px;
 }
 
@@ -125,13 +125,12 @@ footer {
 }
 
 .accordion-button {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .imgAcordion {
   margin: 4px;
-  max-width: 300px;
-  min-width: 100px;
+  width: 100%;
   border: 10px double green;
 }
 
@@ -196,7 +195,7 @@ footer {
 
 @media (min-width: 500px) {
   /** global **/
-  p {
+  p, a, li {
     font-size: 20px;
   }
   /** fin global **/
@@ -212,9 +211,10 @@ footer {
   /** page dieta **/
   .imgAcordion {
     margin: 20px;
+    width: 90%;
   }
   .accordion-button {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   /** fin page dieta **/
   h3 {
@@ -262,4 +262,9 @@ footer {
     margin: 80px 60px 60px 60px;
   }
   /** fin index **/
+  /** page dieta **/
+  .accordion-button {
+    font-size: 1.8rem;
+  }
+  /** fin page dieta **/
 }/*# sourceMappingURL=style.css.map */

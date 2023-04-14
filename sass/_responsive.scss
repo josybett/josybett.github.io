@@ -1,6 +1,6 @@
 @media(min-width:500px) {
     /** global **/
-    p {
+    p, a, li {
         font-size: 20px;
     }
     /** fin global **/
@@ -19,10 +19,11 @@
     /** page dieta **/
     .imgAcordion {
         margin: 20px;
+        width: 90%;
     }
 
     .accordion-button {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     /** fin page dieta **/
 
@@ -79,4 +80,9 @@
     }
     /** fin index **/
 
+    /** page dieta **/
+    .accordion-button {
+        font-size: 1.8rem;
+    }
+    /** fin page dieta **/
 }
